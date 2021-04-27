@@ -9,7 +9,7 @@ pipeline{
             checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/sadiq-inamdar/hello-world.git']]])
           }
       }
-      stage('Build SourceCode'){
+      stage('Build Package'){
            steps{
                sh 'mvn clean package'
            }
