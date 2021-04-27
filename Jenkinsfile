@@ -17,7 +17,7 @@ pipeline{
       stage('Version'){
         steps{
           sh 'pwd'
-          sh 'cd /home/jenkins/workspace/ci - pipeline/webapp/target'
+          sh 'cd /home/jenkins/workspace/"ci - pipeline"/webapp/target'
         }
       }
       stage('Archive'){
