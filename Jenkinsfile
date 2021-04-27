@@ -18,6 +18,7 @@ pipeline{
         steps{
           sh 'pwd'
           sh 'cd /home/jenkins/workspace/"ci - pipeline"/webapp/target'
+          sh 'mv /home/jenkins/workspace/"ci - pipeline"/webapp/target/webapp.war  /home/jenkins/workspace/"ci - pipeline"/webapp/target/webapp$BUILD_NUMBER.war'
         }
       }
       stage('Archive'){
