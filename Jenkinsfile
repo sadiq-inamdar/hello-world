@@ -16,8 +16,8 @@ pipeline{
       }
       stage('Version'){
         steps{
-          sh 'cd /home/jenkins/workspace/ci - pipeline/webapp/target'
-          sh 'mv /home/jenkins/workspace/ci - pipeline/webapp/target/webapp.war  /home/jenkins/workspace/ci - pipeline/webapp/target/webapp$BUILD_NUMBER.war'
+          sh 'cd /home/jenkins/workspace/ci-pipeline/webapp/target'
+          sh 'mv /home/jenkins/workspace/ci-pipeline/webapp/target/webapp.war  /home/jenkins/workspace/ci-pipeline/webapp/target/webapp$BUILD_NUMBER.war'
         }
       }
       stage('Archive'){
