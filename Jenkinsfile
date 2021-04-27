@@ -14,7 +14,7 @@ pipeline{
                sh 'mvn clean package'
            }
       }
-      satge('Archive'){
+      stage('Archive'){
         steps{
           archiveArtifacts artifacts: '**/*.war', followSymlinks: false
         }
